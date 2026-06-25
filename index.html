@@ -10,7 +10,7 @@
 
     <header class="bg-white shadow-sm w-full">
         <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center text-xs text-gray-500 border-b border-gray-100">
-            <div class="flex space-x-6">
+            <div class="flex space-x-6 hidden md:flex">
                 <a href="#" class="hover:text-gray-900">О компании</a>
                 <a href="#" class="hover:text-gray-900">Доставка и оплата</a>
                 <a href="#" class="hover:text-gray-900">Гарантии</a>
@@ -52,16 +52,16 @@
                     <span class="text-xs text-gray-600 mt-1 group-hover:text-green-600 transition-colors">Избранное</span>
                 </a>
                 <a href="#" class="flex flex-col items-center relative group">
-                    <div class="relative">
-                        <img src="./src/images/shopping-cart 1.png" alt="" class="w-7 h-7">
+                    <div class="relative hidden md:block">
+                        <img src="./src/images/shopping-cart 1.png" alt="" class="w-7 h-7 ">
                         <span class="absolute -top-1 -right-2 bg-red-500 text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center">10</span>
                     </div>
-                    <span class="text-xs text-gray-600 mt-1 group-hover:text-green-600 transition-colors">Моя корзина</span>
+                    <span class="text-xs text-gray-600 mt-1 group-hover:text-green-600 transition-colors hidden md:block">Моя корзина</span>
                 </a>
             </div>
         </div>
 
-        <nav class="max-w-7xl mx-auto px-4 pb-4">
+        <nav class="max-w-7xl mx-auto px-4 pb-4 hidden md:flex">
             <ul class="flex justify-between items-center text-sm font-medium text-gray-700">
                 <li class="cursor-pointer hover:text-green-600 flex items-center gap-0.5">Apple <span>▼</span></li>
                 <li class="cursor-pointer hover:text-green-600 flex items-center gap-0.5">Huawei <span>▼</span></li>
@@ -85,7 +85,7 @@
                 </a>
             </div>
             
-            <img src="./src/images/img.png" alt="" class="absolute right-0 bottom-0 h-4/5 object-contain object-right-bottom pointer-events-none">
+            <img src="./src/images/img.png" alt="" class="absolute right-0 bottom-0 h-4/5 object-contain object-right-bottom pointer-events-none ">
             
             <div class="flex space-x-2 z-10 mt-4">
                 <span class="w-6 h-1.5 bg-white rounded-full opacity-100 cursor-pointer"></span>
@@ -334,6 +334,64 @@
     </div>
 
   </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 py-12 font-sans">
+  
+  <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
+    
+    <div class="bg-[#f5f7fb] rounded-xl p-6 flex flex-col items-center text-center justify-center min-h-[180px]">
+      <div class="w-16 h-16 flex items-center justify-center mb-4">
+        <img src="./src/images/discount (2) 1.png" alt="Цены" class="max-w-full max-h-full object-contain" />
+      </div>
+      <p class="text-gray-900 font-semibold text-sm leading-snug">Достойные<br>оптовые цены</p>
+    </div>
+
+    <div class="bg-[#f5f7fb] rounded-xl p-6 flex flex-col items-center text-center justify-center min-h-[180px]">
+      <div class="w-16 h-16 flex items-center justify-center mb-4">
+        <img src="./src/images/safe 1.png" alt="Гарантия" class="max-w-full max-h-full object-contain" />
+      </div>
+      <p class="text-gray-900 font-semibold text-sm leading-snug">Даём гарантию<br>от 1 года</p>
+    </div>
+
+    <div class="bg-[#f5f7fb] rounded-xl p-6 flex flex-col items-center text-center justify-center min-h-[180px]">
+      <div class="w-16 h-16 flex items-center justify-center mb-4">
+        <img src="./src/images/factory 1.png" alt="Производители" class="max-w-full max-h-full object-contain" />
+      </div>
+      <p class="text-gray-900 font-semibold text-sm leading-snug">Работаем напрямую<br>с производителями</p>
+    </div>
+
+    <div class="bg-[#f5f7fb] rounded-xl p-6 flex flex-col items-center text-center justify-center min-h-[180px]">
+      <div class="w-16 h-16 flex items-center justify-center mb-4">
+        <img src="./src/images/quality (1) 1.png" alt="Качество" class="max-w-full max-h-full object-contain" />
+      </div>
+      <p class="text-gray-900 font-semibold text-sm leading-snug">Контроль качества<br>продукции</p>
+    </div>
+
+    <div class="bg-[#f5f7fb] rounded-xl p-6 flex flex-col items-center text-center justify-center min-h-[180px]">
+      <div class="w-16 h-16 flex items-center justify-center mb-4">
+        <img src="./src/images/broken-.png" alt="Брак" class="max-w-full max-h-full object-contain" />
+      </div>
+      <p class="text-gray-900 font-semibold text-sm leading-snug">Процент брака<br>сведён к минимуму</p>
+    </div>
+
+  </div>
+
+  <div class="max-w-8xl">
+    <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6 leading-tight">
+      No Doors Technology – продажа аксессуаров и запчастей для мобильных телефонов оптом
+    </h2>
+    
+    <div class="space-y-6 text-sm md:text-base text-gray-600 leading-relaxed">
+      <p>
+        Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. С другой стороны укрепление и развитие структуры требуют от нас анализа новых предложений. Таким образом рамки и место обучения кадров позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+      </p>
+      <p>
+        Товарищи! дальнейшее развитие различных форм деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции в значительной степени обуславливает создание дальнейших направлений.
+      </p>
+    </div>
+  </div>
+
 </div>
 </body>
 </html>
