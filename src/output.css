@@ -996,7 +996,6 @@
       }
     }
   }
-
   .group-hover\:ring-green-500 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
